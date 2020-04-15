@@ -1,8 +1,5 @@
 # README
-BE endpoints for vueblog app
 
-TODO:
-  specs
-  user decorator for endpoints
-
+BE endpoints for vuejs vueblog app
+https://vueblog-be.herokuapp.com/posts
 
