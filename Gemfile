@@ -6,6 +6,8 @@ ruby '2.6.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rack-cors'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
+gem 'jsonapi-resources'
+
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -28,7 +30,15 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'rspec-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :test do
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers'
+  gem 'faker'
+  gem 'database_cleaner'
 end
 
 group :development do
